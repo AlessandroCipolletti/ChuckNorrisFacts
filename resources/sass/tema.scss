@@ -1,0 +1,33 @@
+$base-color: #666;
+$base-gradient: 'bevel';
+$alert-color: #aaa;
+$include-default-icons: true;
+
+@import '../themes/stylesheets/sencha-touch/default/all';
+
+@include pictos-iconmask(‘delete’);
+@include pictos-iconmask(‘search’);
+@include pictos-iconmask(‘refresh’);
+@include pictos-iconmask(‘bookmarks’);
+@include pictos-iconmask(‘favorites’);
+@include pictos-iconmask(‘team’);
+@include pictos-iconmask(‘organize’);
+@include pictos-iconmask(‘compose’);
+@include pictos-iconmask(‘info’);
+
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-list-paging;
+@include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;

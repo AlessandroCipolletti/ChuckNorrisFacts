@@ -1,0 +1,41 @@
+{
+    "name": "Tabs",
+    "js": [
+        { "path": "sencha-touch-all.js" },
+		{ "path": "app/dizionario.js" },
+	    { "path": "app/app2.js" }
+    ],
+    "css": [
+        { "path": "resources/css/sencha-touch.css", "update": "delta" },
+        { "path": "resources/css/app.css", "update": "delta" },
+        { "path": "resources/css/tema.css", "update": "delta" }
+    ],
+    "appCache": {
+        "cache": [
+            "index.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "extras": [
+        "resources/images",
+        "resources/icons",
+        "resources/loading"
+    ],
+    "archivePath": "archive",
+    "buildPaths": {
+        "testing": "../../deploy/testing/tabs2",
+        "production": "../../deploy/production/tabs2",
+        "package": "../../deploy/package/tabs2",
+        "native": "../../deploy/native/tabs2"
+    },
+    "buildOptions": {
+        "product": "touch",
+        "minVersion": 3,
+        "debug": false,
+        "logger": "no"
+    },
+    "id": "3a867610-670a-11e1-a90e-4318029d18bb"
+}

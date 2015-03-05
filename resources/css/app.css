@@ -1,0 +1,79 @@
+
+body{background-color:#333}
+
+/*GENERALI PAGINE*/
+.card1,.card2,.card3,.card4, .infoPage {
+	text-align:center;
+	font-weight:bold;
+	color:rgba(0,0,0,0.5);
+	text-shadow:rgba(255,255,255,0.2) 0 1px 0;
+	padding: 0px;
+}
+
+.info, .ringraziamenti {
+	font-size: 16px;
+}
+.infoPage h1, .ringraziamenti h1 {
+	font-size: 18px;
+	font-weight:bold;
+	margin-bottom: -10px;
+	color: black;
+}
+
+/*TEMPLATE PER GLI ELEMENTI DELLA LISTA*/
+.frase {
+	position: relative;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: 400;
+	width: 89%;
+	word-wrap: break-word;
+}
+.stellaFrase {
+	position: absolute;
+	right: 10px;
+	bottom: 25%;
+	width: 10%;
+	height: 50%;
+	min-height: 30px;
+}
+.stellaFrase img {
+	height: 30px;
+}
+
+.rigaRandom {
+	border-bottom: solid 1px #ccc;
+}
+.fraseRandom {
+	padding: 10px 10px 6px 6px;
+	position: relative; 
+	font-size: 14px;
+	font-family: arial;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+.stellaFraseRandom {
+	width: 8%;
+}
+.stellaFraseRandom img {
+	height: 30px;
+	margin-right: 5px;
+}
+
+.infoFrase {
+	font-size: 12px;
+}
+
+.no-results {
+	font-size: 15px;
+	padding: 10px;
+}
+/*FINE TEMPLATE*/
+
+/*
+.card1{background-color:#ccc}
+.card2{background-color:#5E99CC}
+.card3{background-color:#759E60}
+.card4{background-color:#9C744F}
+.card5{background-color:#926D9C}
+*/

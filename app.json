@@ -3,7 +3,7 @@
     "js": [
         { "path": "sencha-touch-all.js" },
 		{ "path": "app/dizionario.js" },
-	    { "path": "app/app2.js" }
+	    { "path": "app/app.js" }
     ],
     "css": [
 		{ "path": "resources/css/sencha-touch.css", "update": "delta" },

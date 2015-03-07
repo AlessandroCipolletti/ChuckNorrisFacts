@@ -11,7 +11,7 @@ var Parametri = {
 	'UrlAggiornaVoti'	: 'http://politicinelcesso.it/chuckNorris/aggiornaPunteggiFrasi.php',
 	'UrlRandom'			: 'http://politicinelcesso.it/chuckNorris/randomFrasi.php',
 	'UrlInserisci'		: 'http://politicinelcesso.it/chuckNorris/inserisci.php',
-	'UrlAppStore'		: 'http://politicinelcesso.it/chuckNorris/urlAppStore.php',
+	//'UrlAppStore'		: 'http://politicinelcesso.it/chuckNorris/urlAppStore.php',
 	'NumberOfRandom'	: isPhone ? 2 : 4,
 	'ui'				: 'dark',
 	'uiOverlay'			: 'light'
@@ -87,10 +87,12 @@ function InitFrasi (tx, results) {
 	}
 	IsReadyFrasi = true;
 	CheckAPP();
+	/*
 	if (Visite)
 		db.transaction(function (tx) {
 			tx.executeSql('SELECT * FROM visite',[], InitVisite ,function(tx,result){});
 		});
+	*/
 }
 function InitInglese (tx, results) {
 	if (results.rows.length > 0) {
@@ -105,6 +107,7 @@ function InitInglese (tx, results) {
 	IsReadyInglese = true;
 	CheckAPP();
 }
+/*
 function InitVisite (tx, results) {
 	if (navigator.onLine) 
 		if (results.rows.length > 0) {
@@ -202,7 +205,8 @@ function InitVisite (tx, results) {
 				tx.executeSql('INSERT INTO visite (cont) VALUES ("1")',[],function(tx,result){},function(tx,result){});
 			});
 		}
-} 
+}
+*/
 function InitDb() {
 	db.transaction(function (tx) {
 		//FRASI
@@ -924,11 +928,9 @@ Ext.application({
 				docked: 'top',
 				title: LABEL['page5'],
 				ui: Parametri['ui']
-			}, {
-				html: LABEL['infoPage'],
-				cls: 'info',
-				style: 'margin: 10px 0 20px 0',
-			}, {
+			}
+			/*
+			, {
 				xtype: "button",
 				text: LABEL['appStore'],
 				ui: 'confirm',
@@ -940,7 +942,9 @@ Ext.application({
 					else
 						Ext.Msg.alert(LABEL['error'], LABEL['connectionError']);
 				}
-			}, (Parametri['Lingua'] != "en" ? {
+			}
+			*/
+			, (Parametri['Lingua'] != "en" ? {
                 xtype: 'fieldset',
 				instructions: LABEL['istruzioniInglese'],
                 title: LABEL['impostazioni'],
